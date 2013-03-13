@@ -1,0 +1,14 @@
+body {
+	background: #111111;
+}
+
+p {
+	width: 900;
+	text-align: left;
+	color: #FFFFFF;
+}
+
+#canvas {
+	background: #000000;
+	border: thin inset #9B30FF;
+}
