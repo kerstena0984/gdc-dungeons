@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>Model Uploader</title>
+	</head>
+	<body>
+		<center>
+			<h2>Model Uploader Page</h2>
+			<p>Hello, {{user}} <a href="{{logout}}">logout</a></p>
+			<form action="{{upload_url}}" method="POST" enctype="multipart/form-data">
+				Name: <input type="text" name="name" />
+				<input type="file" name="file" />
+				<input type="hidden" name="user_id" value="{{user_id}}" />
+				<input type="submit" name="submit" value="Upload" />
+			</form>
+		</center>
+	</body>
+</html>

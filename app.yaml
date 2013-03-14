@@ -1,12 +1,12 @@
 application: gdc-dungeons
-version: 1
+version: 2
 runtime: python27
 api_version: 1
 threadsafe: no
 
 handlers:
-- url: /static
-  static_dir: static
+- url: /old
+  static_dir: old
 
 - url: /favicon\.ico
   static_files: favicon.ico

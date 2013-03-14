@@ -13,7 +13,7 @@ var TextureManager = function() {
 				callback(name, endTime - startTime);
 			}
 		}
-		textures[name].image.src = "/static/images/" + name + ".png";
+		textures[name].image.src = "/old/static/images/" + name + ".png";
 	}
 
 	function createTexture(gl, name) {

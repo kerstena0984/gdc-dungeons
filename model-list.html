@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Model List</title>
+		<style type="text/css">
+			table, th, td
+			{
+				border: 1px solid black;
+				border-collapse: collapse;
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<h2>Model List Page</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>name</th>
+						<th>created</th>
+						<th>size</th>
+						<th>md5</th>
+						<th>download</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for model in models %}
+						<tr>
+							<td>{{model.name}}</td>
+							<td>{{model.created}}</td>
+							<td style="text-align: right;">{{model.size}}</td>
+							<td>{{model.md5_hash}}</td>
+							<td><a href="/model/request?key={{model.blobKey}}">download</a></td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</center>
+	</body>
+</html>
